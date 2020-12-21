@@ -1,0 +1,35 @@
+.mg-b5 { margin-bottom: 5px }
+
+.mg-b10 { margin-bottom: 10px }
+
+.mg-b15 { margin-bottom: 15px }
+
+.mg-b20 { margin-bottom: 20px }
+
+.mg-auto { margin: auto }
+
+.mg-0-5 { margin:0 5% }
+
+.mg-0-2 { margin: 0 2% }
+
+.p-relative { position: relative }
+
+.block { display: block }
+
+.inline-b { display: inline-block }
+
+.uppercase { text-transform: uppercase }
+
+.capitalize { text-transform: capitalize }
+
+.float-left { float: left }
+
+.overflow { overflow: hidden }
+
+.bg-gray { background: #f9f9f9 }
+
+.maincolor { color: #6195ff }
+
+.width-100 { width: 100% }
+
+

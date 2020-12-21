@@ -1,0 +1,123 @@
+/* 
+    1- Common Styles
+    2- General Styles
+    3 - Sections
+        3.1   Header Section
+        3.2   Home Section
+        3.3   About Section
+        3.4   Portfolio Section
+        3.5   Offer Section
+        3.6   Services Section
+        3.7   Statistic Section
+        3.8   Prices Section
+        3.9   Testimonial Section
+        3.10  Team Section
+        3.11  Blog Section
+        3.12  Contact Section
+        3.13  Footer Section
+*/
+
+/* 1- Common Styles */ 
+
+/*  -overlay
+    -opacity hover
+    -section-header
+    -section padding
+    -hover effect 1 ( left to right ) 
+    -hover effect 2 (  right to left ) 
+*/
+
+.overlay { 
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+.hover-opacity { transition: opacity .2s }
+
+.hover-opacity:hover { opacity: 0.7 }
+
+.ltr-effect ,
+.tb-effect { position: relative }
+
+.ltr-effect::after ,
+.tb-effect::after { 
+    content: "";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    transition: width .5s , height .5s;
+    background: #333
+}
+
+.tb-effect::after { 
+    height: 0;
+    width: 100%
+}
+
+.tb-effect:hover::after { 
+    height: 100%
+}
+
+.ltr-effect:hover::after { 
+    width: 100%
+}
+
+                                /* General css style */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root { 
+    --mainColor: #6195ff;
+    --grayColor: #999;
+    --plus-gray  : #e8e8e8;
+    --whiteColor: #fff;
+}
+
+body { font-family: 'Varela Round', sans-serif }
+
+h1 , h2 , h3 , h4 , h5 , h6 { font-family: montserrat,sans-serif }
+
+button { font-family: inherit }
+
+.clear { clear: both }
+
+ul { list-style: none }
+
+a { text-decoration: none }
+
+.pd-y { padding: 120px 0 }
+
+.container { 
+    width: 80%;
+    margin: auto
+}
+
+.section-header { 
+    text-align: center;
+    margin-bottom: 70px
+}
+
+.section-title { 
+    text-transform: capitalize;
+    font-size: 35px
+}
+
+.line { 
+    display: block;
+    width: 65px;
+    height: 5px;
+    background-color: var(--mainColor);
+    margin: auto 
+}
+          
+/* bridcrum */

@@ -1,0 +1,21 @@
+                                /*------ About Section     --------*/
+.about-item {
+border: var(--plus-gray) 2px solid;
+width: 30%;
+text-align: center;
+padding: 40px 20px
+}
+
+.about-item-title {
+font-size: 24px;
+transition: color .5s
+}
+
+.about-item:hover .about-item-title {
+color: var(--whiteColor)
+}
+
+.about-item-desc {
+line-height: 1.5;
+color: var(--grayColor)
+}

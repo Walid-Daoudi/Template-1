@@ -1,0 +1,33 @@
+                                    /*------ Blog  Page  --------*/
+
+.blog-item {
+width: 30%;
+background-color: var(--whiteColor)
+}
+
+.blog-info {
+padding: 20px 20px 30px 
+}
+
+.blog-info-list {
+margin: 10px 0
+}
+
+.blog-info-list li {
+margin: 0 10px 0 0
+}
+
+.blog-info i {
+margin: 0 3px 0 0
+}
+
+.blog-info-title {
+font-size: 1.32em;
+font-weight: bold;
+margin: 20px 0
+}
+
+.blog-info-desc {
+color: var(--grayColor);
+line-height: 1.5
+}

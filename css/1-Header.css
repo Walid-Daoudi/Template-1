@@ -1,0 +1,73 @@
+                                /*  3.1 Header Section */
+
+.header {
+    position: fixed;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+/*.header-contant {
+     overflow: hidden; to solve float + hidden  dropdown 
+}*/
+
+.logo {
+    width: 40%
+}
+
+.logo img {
+    width: 20%;
+    margin-top: 15px
+}
+
+.nav {
+    width: 60%;
+    text-align: right
+}
+
+.nav > li > a {
+    font-size: 14px;
+    color: var(--whiteColor);
+    padding: 22px 10px
+}
+
+.nav > li > a::after {
+    content: "";
+    display: block;
+    background-color: var(--mainColor);
+    width: 0;
+    height: 2px;
+    transition: width 0.5s;
+    margin-top: 2px
+}
+
+.nav > li > a.activ::after ,
+.nav > li > a:hover::after {
+    width: 100%
+}
+
+.drop-menu {
+    position: absolute;
+    list-style-type: none;
+    text-align: center;
+    width: 150px;
+    transition: margin-top .4s , opacity 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    top: 86%;
+    margin-top: 15px;
+    left: -20px
+}
+
+.drop-menu li a {
+    color:  var(--whiteColor);
+    background: var(--mainColor);
+    border-radius: 5px;
+    padding: 10px
+}
+
+.dropdown:hover > .drop-menu {
+    margin-top: 0;
+    visibility: visible;
+    opacity: 1
+}
+

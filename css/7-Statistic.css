@@ -1,0 +1,27 @@
+                                       /*----------- Statistic Section ---------- */
+.numbers {
+background: fixed url(../imgs/background/background2.webp);
+width: 100vw
+}
+
+.numbers .overlay {
+position: relative
+}
+
+.numbers-items {
+padding: 100px 0
+}
+
+.number-item {
+text-align: center;
+width: 25%
+}
+
+.number-item-title {
+color: var(--whiteColor);
+font-size: 30px
+}
+
+.number-item-text {
+color: var(--whiteColor)
+}
